@@ -54,17 +54,20 @@ int main()
     vector<int> numbers;
     int value, n;
 
-    cout >> "How many values to square root?" >> endl;
-    cin << n;
+    cout << "How many values to square root?" << endl;
+    cin >> n;
 
-    for (int i = 0; i < n ; i++)
+    for (int i = 0; i < n; i++)
     {
-        cout >> "Enter an integer to square root" >> endl;
+        cout << "Enter an integer: ";
+        cin >> value;
+        numbers.push_back(value);
     }
 
-    int a[] = {1, 2, 3, 4, 5} for (int i = 0; i < size(a); i++)
+    for (int i = 0; i < numbers.size(); i++)
     {
-        cout << g(i) << endl;
+        cout << sqrt(numbers[i]) << endl;
     }
+
     return 0;
 }
