@@ -54,7 +54,7 @@ int main()
     vector<int> numbers;
     int value, n;
 
-    cout << "How many values to square root?" << endl;
+    cout << "How many values to test?" << endl;
     cin >> n;
 
     for (int i = 0; i < n; i++)
@@ -64,9 +64,18 @@ int main()
         numbers.push_back(value);
     }
 
+    cout << "Here are your values square rooted." << endl;
+
     for (int i = 0; i < numbers.size(); i++)
     {
         cout << sqrt(numbers[i]) << endl;
+    }
+
+    cout << "Here are your values exponentiated." << endl;
+
+    for (int i = 0; i < numbers.size(); i++)
+    {
+        cout << exp(numbers[i]) << endl;
     }
 
     return 0;
